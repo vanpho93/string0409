@@ -23,7 +23,6 @@ function getBody(rawStr, pre, post) {
     return rawStr.substring(startIndex, endIndex).trim();
 }
 
-// console.log(getBody(item, '<title>', '</title>'));// 
 function getTinFromItem(rawItem) {
     const title = getBody(rawItem, '<title>', '</title>');
     const description = getBody(rawItem, '</a></br>', ']]>');
